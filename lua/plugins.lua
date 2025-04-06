@@ -71,4 +71,9 @@
     	'hrsh7th/vim-vsnip',
   }
 
+  -- TreeSitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate' -- Automatically updates Treesitter parsers after install
+  }
 	end)
