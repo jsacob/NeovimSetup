@@ -14,10 +14,9 @@ let mapleader = " "
 
 " == Basic Mappings ==
 nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>x :x<CR>
-
-" == Search ==
+nnoremap <leader>q :x<CR>
+nnoremap <leader>f :%s/
+" == Search =
 set ignorecase
 set smartcase
 set incsearch
@@ -56,6 +55,7 @@ call plug#end()
 " == Theme ==
 colorscheme midnight
 
+
 " == Auto Pairs Setup ==
 lua << EOF
 require("nvim-autopairs").setup()
@@ -64,6 +64,7 @@ EOF
 " == Coc.nvim Settings ==
 " Confirm completion with Enter (already works for you)
 inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
+
 " Tab only indents without interacting with snippets
 inoremap <silent><expr> <TAB> CheckBackspace() ? "\<TAB>" : "\<TAB>"
 " Shift-Tab to navigate previous suggestions (optional)
