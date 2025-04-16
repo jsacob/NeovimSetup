@@ -1,0 +1,9 @@
+{
+  "diagnostic.enable": true,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.delay": 50,
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "suggest.enablePreselect": true,
+  "coc.preferences.formatOnSaveFiletypes": ["java"]
+}
+

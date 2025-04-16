@@ -35,10 +35,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'joshdick/onedark.vim'
+Plug 'dasupradyumna/midnight.nvim'
 
-" --- Language & LSP ---
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
+" --- Language & LSP (Coc only) ---
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " --- Productivity ---
 Plug 'tpope/vim-commentary'
@@ -48,14 +48,13 @@ Plug 'tpope/vim-fugitive'
 " --- Syntax Highlighting ---
 Plug 'sheerun/vim-polyglot'
 
-" --- Autocomplete & Snippets ---
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" --- Autocomplete & Autopairs ---
 Plug 'windwp/nvim-autopairs'
 
 call plug#end()
 
 " == Theme ==
-colorscheme onedark
+colorscheme midnight
 
 " == Auto Pairs Setup ==
 lua << EOF
@@ -63,25 +62,15 @@ require("nvim-autopairs").setup()
 EOF
 
 " == Coc.nvim Settings ==
-" Enable auto-complete on Enter and Tab like VSCode
+" Confirm completion with Enter (already works for you)
 inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
 " Tab only indents without interacting with snippets
 inoremap <silent><expr> <TAB> CheckBackspace() ? "\<TAB>" : "\<TAB>"
-" Shift-Tab to navigate previous suggestions (optional, you can remove this if not needed)
+" Shift-Tab to navigate previous suggestions (optional)
 inoremap <silent><expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-" == Vim LSP Setup for Java ==
-let g:lsp_servers = {}
-
-" --- Java LSP ---
-let g:lsp_servers['java'] = {
-    \ 'command': '/home/jacob/nix/store/bsdpibrlbxxxvai24v2x793vpd9riqw1-jdt-language-server-1.40.0/bin/jdtls',
-    \ 'args': ['-data', '~/workspace/jdtls']
-    \ }
-
 
