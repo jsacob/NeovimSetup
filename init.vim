@@ -53,8 +53,8 @@ Plug 'windwp/nvim-autopairs'
 call plug#end()
 
 " == Theme ==
-colorscheme midnight
-
+colorscheme onedark
+hi Normal guibg=#000000  
 
 " == Auto Pairs Setup ==
 lua << EOF
