@@ -4,6 +4,8 @@
   "diagnostic.delay": 50,
   "java.errors.incompleteClasspath.severity": "ignore",
   "suggest.enablePreselect": true,
-  "coc.preferences.formatOnSaveFiletypes": ["java"]
+  "coc.preferences.formatOnSaveFiletypes": ["java"],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true
 }
-
