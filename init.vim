@@ -74,6 +74,9 @@ hi Normal guibg=#272822
 
 set guifont=Source\ Code\ Pro:h14
 
+let $FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range=:500 {}"'
+
+
 " == Auto Pairs Setup ==
 lua << EOF
 require("nvim-autopairs").setup()

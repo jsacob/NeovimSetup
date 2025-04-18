@@ -1,6 +1,6 @@
 ### Requirement
-- have `tree-sitter` installed for fully functioning syntax highlighting 
-
+- install `tree-sitter` for fully functioning syntax highlighting 
+- install `bat` for fzf preview highlighting
 ### About this setup
 minimal neovim setup with auto-cmd, full code snippets with auto imports, syntax highlighting, fzf, quick keys and monokai themed 
 
