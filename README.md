@@ -1,6 +1,6 @@
 ### Installation 🚀
-- linux: `mv NixosSetup .config/nvim` 
-- windows: `Move-Item NixosSetup $env:USERPROFILE\AppData\Local\nvim` 
+- linux: `mv NeovimsSetup .config/nvim` 
+- windows: `Move-Item NeovimSetup $env:USERPROFILE\AppData\Local\nvim` 
 - once in run `:PlugInstall` and eveything should be ready to use.
 
 ### Requirement 🔧
