@@ -1,1 +1,1 @@
-make sure to have tree-sitter or syntax highlighting won't work properly.
+# make sure to have tree-sitter installed or the syntax highlighting won't work properly.
