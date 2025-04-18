@@ -1,5 +1,6 @@
-### Installation 🚀
-- linux: `mv NeovimSetup .config/nvim` 
+# Installation 🚀
+
+- linux: mv NeovimSetup .config/nvim` 
 - windows: `Move-Item NeovimSetup $env:USERPROFILE\AppData\Local\nvim` 
 - once in run `:PlugInstall` and eveything should be ready to use.
 
