@@ -2,13 +2,15 @@
 - linux: `mv NixosSetup .config/nvim` 
 - windows: `Move-Item NixosSetup $env:USERPROFILE\AppData\Local\nvim` 
 - once in run `:PlugInstall` and eveything should be ready to use.
-### Requirement
+
+### Requirement 🔧
 - install `tree-sitter` for fully functioning syntax highlighting 
 - install `bat` for fzf preview highlighting
-### About this setup
-This set up is to be as minimal while being as helpful as possible providing everything you would typically want or need for an environment
-### Simple keys
 
+### About this setup 🪶
+This set up is to be as minimal while being as helpful as possible providing everything you would typically want or need for an environment
+
+### Simple keys ⌨️
 - the`<leader>` key is spacebar
 
 - `leader + w` writes to the file
@@ -21,8 +23,7 @@ This set up is to be as minimal while being as helpful as possible providing eve
 - `leader + k` allows you to from terminal to editor  
 - `leader + j` allows you to from editor back to terminal 
 
-### Quick on using coc for lsp + extensive snippets
-
+### Quick on using coc for lsp + extensive snippets ⚡
 - to install a lsp `:CocInstall coc-[language]`
 - here is a list of all the supported languages  https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 
