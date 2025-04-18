@@ -24,9 +24,11 @@ nnoremap <leader>x :q!<CR>
 nnoremap <leader>t :belowright term<CR>
 autocmd TermOpen * startinsert
 tnoremap <Esc> <C-\><C-n>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <Space> <Nop>
 
 
-"
 " == Search ==
 set ignorecase
 set smartcase
