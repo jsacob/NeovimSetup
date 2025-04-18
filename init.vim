@@ -18,6 +18,7 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :x<CR>
 nnoremap <leader>f :%s/
 nnoremap <leader>h <Plug>MarkdownPreview 
+nnoremap <leader>x :q!<CR>
 " == Search ==
 set ignorecase
 set smartcase
