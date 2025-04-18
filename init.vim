@@ -1,4 +1,4 @@
- " == Basic Settings == 
+" == Basic Settings == 
 set nocompatible
 set number    
 set hidden
@@ -23,11 +23,10 @@ nnoremap <leader>x :q!<CR>
 "== Quick termnal access ==
 nnoremap <leader>t :belowright term<CR>
 autocmd TermOpen * startinsert
-" Ctrl + J: Focus on the terminal window and enter Insert mode
-nnoremap <C-j> :wincmd j<CR> | startinsert
-
-" Ctrl + K: Focus back on the editor window in Normal mode
-tnoremap <C-k> <C-\><C-n> | wincmd k
+tnoremap <Esc> <C-\><C-n>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <Space> <Nop>
 
 " == Search ==
 set ignorecase
