@@ -16,7 +16,8 @@ let mapleader = " "
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :x<CR>
 nnoremap <leader>f :%s/
-" == Search =
+nnoremap <leader>h <Plug>MarkdownPreview 
+" == Search ==
 set ignorecase
 set smartcase
 set incsearch
@@ -35,6 +36,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'joshdick/onedark.vim'
 Plug 'dasupradyumna/midnight.nvim'
+Plug 'tanvirtin/monokai.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " --- Language & LSP (Coc only) ---
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -52,9 +56,23 @@ Plug 'windwp/nvim-autopairs'
 
 call plug#end()
 
+" == Treesitter Setup ==
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "java" },
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
+
 " == Theme ==
-colorscheme onedark
-hi Normal guibg=#000000  
+colorscheme monokai
+
+hi Normal guibg=#272822
+
+set guifont=Source\ Code\ Pro:h14
 
 " == Auto Pairs Setup ==
 lua << EOF
@@ -74,4 +92,3 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
