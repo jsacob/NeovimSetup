@@ -1,4 +1,4 @@
-" == Basic Settings ==
+" == Basic Settings == 
 set nocompatible
 set number    
 set hidden
