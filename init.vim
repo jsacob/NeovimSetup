@@ -26,8 +26,6 @@ autocmd TermOpen * startinsert
 tnoremap <Esc> <C-\><C-n>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>h :wincmd h<CR>
 nnoremap <Space> <Nop>
 
 " == Search ==
