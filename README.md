@@ -29,3 +29,4 @@ This set up is to be as minimal while being as helpful as possible providing eve
 - here is a list of all the supported languages  https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 
 
+
