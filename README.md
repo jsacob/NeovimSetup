@@ -1,7 +1,9 @@
 # Installation 🚀
 
-- linux: mv `NeovimSetup .config/nvim` 
-- windows: `Move-Item NeovimSetup $env:USERPROFILE\AppData\Local\nvim` 
+- Linux/Mac: `mv NeovimSetup .config/nvim` 
+- Windows: `Move-Item NeovimSetup $env:USERPROFILE\AppData\Local\nvim` 
+- Install Plug `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+         `https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 - once in run `:PlugInstall` and eveything should be ready to use.
 
 ### Requirement 🔧
