@@ -1,3 +1,4 @@
+
 # Installation 🚀
 
 - Linux/Mac: `mv NeovimSetup .config/nvim` 
